@@ -1,6 +1,7 @@
 
 print("hello")
 print("hello"*8)
+print("hello",end="")#end=末尾输出字符，不输入时为换行符
 
 #单行注释
 """多行注释1"""
@@ -51,6 +52,7 @@ print(f)
 print(e-f)#e中有，f中没有的
 print(f-e)#f中有，e中没有的
 
+#if
 f1=1
 f2=3
 if(f1==1 and f2<3):#且用and
@@ -64,20 +66,39 @@ elif(f2==3):
 else:
     print("else\n")
 
+#while
 j=10
 while(j>1):
     j-=1
 print(j)
 print('\n')
 
+#for
 h=[1,2,"q","w","e"]
 for i in h:
     print(i)
 
 print('\n')
 for j in range(0,10):
-    print(j)
+    print(j,end="  ")
+print()
+for j in range(9,-1,-1):#最后的-1为步长
+    print(j,end="  ")
+print()
+for j in range(9,-1,-2):#最后的-2为步长
+    print(j,end="  ")
+print()
 
 #break:中断所有循环
 # continue:中断所有循环
 
+
+#str()转换成字符串
+'''
+函数定义的格式
+def 函数名(参数):
+   函数体
+'''
+def fan(i):
+    print(i)
+fan('wew')
