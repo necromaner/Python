@@ -102,3 +102,10 @@ def 函数名(参数):
 def fan(i):
     print(i)
 fan('wew')
+ 
+#import 模块名
+#from ... import ... 从某模块导入某个方法
+import cgi
+cgi.closelog()
+
+from cgi import closelog
