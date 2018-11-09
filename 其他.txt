@@ -1,0 +1,3 @@
+open -e .bash_profile
+
+python3 -m pip install  模块
